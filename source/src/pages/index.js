@@ -16,7 +16,7 @@ function IndexPage() {
   const { style } = useThemeContext()
   const { layout } = useSiteMetadata()
 
-  const { innerWidth: width } = window;
+  const { innerWidth: width } = typeof window !== 'undefined' && window;
   const isMobile = width >= 768 ? 'leftLayout' : '';
 
   const isDark = style === 'dark' ? 'dark' : 'light';
