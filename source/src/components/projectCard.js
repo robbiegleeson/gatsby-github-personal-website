@@ -10,7 +10,7 @@ function ProjectCard({ repository }) {
       <div className="d-flex flex-justify-between flex-items-start mb-1">
         <h1 className="f4 lh-condensed mb-1">
           <a target="_blank" href={repository.url}>
-            {repository.name}
+            <span className="text-dark-blue">{repository.name}</span>
           </a>
         </h1>
       </div>

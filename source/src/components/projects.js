@@ -43,7 +43,7 @@ function Projects() {
 
   return (
     <>
-      <h2 className={style === 'dark' ? "text-white" : ""}>My Professional Projects</h2>
+      <h2 className={style === 'dark' ? "text-orange" : ""}>My Professional Projects</h2>
       <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}>Some Projects I've worked on professionally</p>
       <div className="d-sm-flex flex-wrap gutter-condensed mb-4">
         {professionalProjects.map((repository, i) => (
@@ -53,7 +53,7 @@ function Projects() {
         ))}
       </div>
       <hr />
-      <h2 className={style === 'dark' ? "text-white" : ""}>My Git Projects</h2>
+      <h2 className={style === 'dark' ? "text-orange" : ""}>My Git Projects</h2>
       <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}>Some mini GitHub projects I created</p>
       <div className="d-sm-flex flex-wrap gutter-condensed mb-4">
         {repositories.nodes.filter(repo => projectsToDisplay.find(p => p === repo.name)).map((repository, i) => (

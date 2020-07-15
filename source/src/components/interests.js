@@ -25,7 +25,7 @@ export default () => {
   const topics = edges[0].node.topics
   return (
     <>
-      <h2 className={style === 'dark' ? "text-white" : ""}>My Core Skills</h2>
+      <h2 className={style === 'dark' ? "text-orange" : ""}>My Core Skills</h2>
       <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}></p>
       <div className="d-sm-flex flex-wrap gutter-condensed mb-4">
         {topics.map((topic, i) => (

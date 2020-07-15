@@ -11,8 +11,8 @@ function RepoCard({ repository }) {
       <div className="d-flex flex-justify-between flex-items-start mb-1">
         <h1 className="f4 lh-condensed mb-1">
           <a href={repository.url}>
-            <span className="text-normal">{repository.owner.login} /</span>
-            {repository.name}
+            <span className="text-orange">{repository.owner.login} /</span>
+            <span className="text-dark-blue">{repository.name}</span>
           </a>
         </h1>
       </div>

@@ -11,7 +11,11 @@ export const themes = {
   dark: {
     ...primerTheme,
     background: '#2f363d',
-    iconColor: '#ffffff'
+    iconColor: '#ffffff',
+    colors: {
+      ...primerTheme.colors,
+      orange: ['#feba00']
+    }
   },
   flexa: {
     columns: 24,
@@ -29,6 +33,8 @@ export const themes = {
     }
   }
 }
+
+console.log(themes)
 
 const windowGlobal = typeof window !== 'undefined' && window
 
