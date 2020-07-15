@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    style: `light`,
+    style: `dark`,
     layout: `sidebar`,
     social: {
       dev: `https://github.com/gleesonrob`,
