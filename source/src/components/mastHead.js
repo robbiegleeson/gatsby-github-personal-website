@@ -77,6 +77,7 @@ export default ({ metaData }) => {
     isDeveloperProgramMember,
     company,
   } = user
+
   return (
     <>
       <div className="avatar-contianer">

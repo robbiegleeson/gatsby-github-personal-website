@@ -10,9 +10,17 @@ import Thoughts from '../components/thoughts'
 import SEO from '../components/seo'
 import useSiteMetadata from '../hooks/siteMetaData'
 
+import './index.css';
+
 function IndexPage() {
   const { style } = useThemeContext()
   const { layout } = useSiteMetadata()
+
+  const { innerWidth: width } = window;
+  const isMobile = width >= 768 ? 'leftLayout' : '';
+
+  const isDark = style === 'dark' ? 'dark' : 'light';
+
   return <Layout>
     {/* <SEO /> */}
     {layout === 'stacked' ?
@@ -29,10 +37,10 @@ function IndexPage() {
         </div>
       </div> :
       <div className={`d-md-flex ${style !== 'dark' && 'border-md-bottom'}`}>
-        <div className={`flex-self-stretch ${style === 'dark' ? 'bg-gray-dark' : 'border-md-right border-gray-light bg-white'} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-5 leftLayout`}>
+        <div className={`flex-self-stretch ${style === 'dark' ? 'bg-gray-dark' : 'border-md-right border-gray-light bg-white'} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-5 ${isMobile}`}>
           <MastHead metaData={true} />
         </div>
-        <div className="col-md-7 col-lg-8 col-xl-9 px-4 py-5 px-lg-7 border-top border-md-top-0" style={{ backgroundColor: style === 'dark' ? "#2f363d" : "#fafbfc", position: 'absolute', right: 0 }}>
+        <div className={`col-md-7 col-lg-8 col-xl-9 px-4 py-5 px-lg-7 border-top border-md-top-0 ${isDark}`}>
           <div className="mx-auto" style={{ maxWidth: '1200px' }}>
             <Projects />
             <Interests />

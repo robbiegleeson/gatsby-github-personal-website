@@ -43,7 +43,7 @@ const reducer = (state, { value, type }) => {
   windowGlobal.localStorage && windowGlobal.localStorage.setItem('theme', value)
   switch (type) {
     case 'TOGGLE_THEME':
-      return state.style === 'light'
+      return state.style === 'dark'
         ? { theme: themes.dark, style: 'dark' }
         : { theme: themes.light, style: 'light' }
     case 'CHANGE_THEME':
