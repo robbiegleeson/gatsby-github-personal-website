@@ -5,7 +5,7 @@ import React from 'react'
 import Emoji from 'react-emoji-render'
 import Toggle from 'react-toggle'
 import styled from 'styled-components'
-import { Dev, Linkedin, Twitter } from 'styled-icons/fa-brands'
+import { Dev, Linkedin, Twitter, Git } from 'styled-icons/fa-brands'
 
 import useSiteMetadata from '../hooks/siteMetaData'
 import useThemeContext from '../hooks/themeContext'
@@ -111,17 +111,10 @@ export default ({ metaData }) => {
             </PrimerLink>
           </MetaComponent>
         )}
-        {social.dev && <PrimerLink
-          href={social.dev}
-          color={theme.iconColor}
-          target='_blank'>
-          <Dev size={20} color={theme.iconColor} title={`${name}'s DEV Profile`} />
-        </PrimerLink>
-        }
         {social.twitter && <PrimerLink
           href={social.twitter}
           color={theme.iconColor}
-          marginLeft={2}
+          // marginLeft={2}
           target='_blank'>
           <Twitter size={20} color={theme.iconColor} title={`${name}'s Twitter Profile`} />
         </PrimerLink>

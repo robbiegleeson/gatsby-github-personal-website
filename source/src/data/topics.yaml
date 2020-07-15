@@ -1,10 +1,13 @@
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: React.js
+    image_url: https://cdn.auth0.com/blog/react-js/react.png
+    web_url: '#'
 
-  - name: Web design
+  - name: Redux
+    image_url: https://everyday.codes/wp-content/uploads/2020/01/0-U2DmhXYumRyXH6X1.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: JavaScript
+    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuQLVaq1aRTE6kegl4kjC4XMaiz_tCdijLUA&usqp=CAU
+
+  - name: HTML5
+    image_url: https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png
