@@ -132,7 +132,7 @@ export default ({ metaData }) => {
           </PrimerLink>
           }
         </Box>
-        {/* <Box mt={16}>
+        <Box mt={16}>
           <Toggle
             defaultChecked={style === 'dark'}
             onChange={onThemeChange}
@@ -155,7 +155,7 @@ export default ({ metaData }) => {
               ),
             }}
           />
-        </Box> */}
+        </Box>
       </div>
       <StyledHr color={style} />
       {isDeveloperProgramMember && (
