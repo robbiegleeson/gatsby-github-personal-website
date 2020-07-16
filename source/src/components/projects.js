@@ -36,9 +36,9 @@ function Projects() {
   ];
 
   const professionalProjects = [
-    { name: 'Aangine', description: 'Automated Portfolio Planning', url: 'http://www.aangine.com', img: 'https://via.placeholder.com/728x200.png?text=aangine' },
-    { name: 'IPH', description: 'International Performance Hub', url: 'http://www.iph.sa', img: 'https://via.placeholder.com/728x200.png?text=IPH' },
-    { name: 'Digxcel', description: 'GDPR Compliance', url: 'http://www.digxcel.ie', img: 'https://via.placeholder.com/728x200.png?text=digxcel' },
+    { name: 'Aangine', description: 'Automated Portfolio Planning', url: 'http://www.aangine.com', img: 'https://www.continuoussoftware.ie/wp-content/uploads/2018/01/angine_white.png' },
+    { name: 'IPH', description: 'International Performance Hub', url: 'http://www.iph.sa', img: 'https://www.iph.sa/assets/images/logo/logo-en.png' },
+    { name: 'Digxcel', description: 'GDPR Compliance', url: 'http://www.digxcel.ie', img: 'https://robbiegleeson.github.io/images/digxcel.png' },
   ]
 
   return (

@@ -6,7 +6,7 @@ function ProjectCard({ repository }) {
   const { style } = useThemeContext()
   return (
     <div className={`github-component height-full text-left ${style === 'dark' ? 'box-shadow' : 'border border-gray-light'} bg-white rounded-1 p-3`}>
-      {/* <div style={{ backgroundImage: `url(${repository.img})`, backgroundSize: 'contain' }}/> */}
+      <img src={repository.img} style={{ width: '100%', height: 200 }} />
       <div className="d-flex flex-justify-between flex-items-start mb-1">
         <h1 className="f4 lh-condensed mb-1">
           <a target="_blank" href={repository.url}>

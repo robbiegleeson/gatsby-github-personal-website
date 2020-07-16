@@ -16,8 +16,7 @@ const StyledHr = styled.hr`
 
 export default ({ metaData }) => {
   const { layout, social } = useSiteMetadata()
-  const { style, theme, setTheme } = useThemeContext()
-  console.log(style)
+  const { style, theme, setTheme } = useThemeContext();
 
   function onThemeChange(e) {
     const newStyle = e.target.checked ? 'dark' : 'light'
