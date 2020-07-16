@@ -42,7 +42,7 @@ const localTheme = (windowGlobal.localStorage && windowGlobal.localStorage.getIt
 
 const initialState = {
   style: localTheme,
-  theme: themes[localTheme]
+  theme: themes['dark']
 }
 
 const reducer = (state, { value, type }) => {
@@ -51,7 +51,7 @@ const reducer = (state, { value, type }) => {
     case 'TOGGLE_THEME':
       return state.style === 'dark'
         ? { theme: themes.dark, style: 'dark' }
-        : { theme: themes.light, style: 'light' }
+        : { theme: themes.dark, style: 'light' }
     case 'CHANGE_THEME':
       return { theme: themes[value], style: value }
     default:
