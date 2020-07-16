@@ -3,9 +3,9 @@ module.exports = {
     style: `dark`,
     layout: `sidebar`,
     social: {
-      dev: `https://github.com/gleesonrob`,
+      dev: `https://github.com/robbiegleeson`,
       twitter: `https://twitter.com/robbiegleeson`,
-      linkedIn: `https://www.linkedin.com/in/robgleeson`
+      linkedIn: `https://www.linkedin.com/in/gleesonrob`
     }
   },
   pathPrefix: process.env.PATH_PREFIX || '/',

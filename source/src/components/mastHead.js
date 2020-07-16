@@ -19,7 +19,8 @@ export default ({ metaData }) => {
   const { style, theme, setTheme } = useThemeContext();
 
   function onThemeChange(e) {
-    const newStyle = e.target.checked ? 'dark' : 'light'
+    let newStyle = 'dark';
+    newStyle = e.target.checked ? 'dark' : 'light'
     setTheme(newStyle)
   }
 
