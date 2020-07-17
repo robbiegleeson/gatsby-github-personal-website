@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
 import PostCard from "./postCard"
 import useThemeContext from "../hooks/themeContext"
 
@@ -26,8 +27,14 @@ function Thoughts() {
       }
     `
   )
+
+  const StyledHr = styled.hr`
+  ${props => props.color === 'dark' && 'border-top-color: whitesmoke;'}
+`
+
   return edges.length > 0 ?
     <>
+      <StyledHr color={style} />
       <h2 className={style === 'dark' ? "text-orange" : ""}>Posts</h2>
       <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}></p>
       <div className="d-sm-flex flex-wrap gutter-condensed mb-4">

@@ -41,8 +41,8 @@ function IndexPage() {
         <div className={`flex-self-stretch ${style === 'dark' ? 'bg-gray-dark' : 'border-md-right border-gray-light bg-white'} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-5 ${isMobile}`}>
           <MastHead metaData={true} />
         </div>
-        <div className={`col-md-7 col-lg-8 col-xl-9 px-4 py-5 px-lg-7 border-top border-md-top-0 ${isDark}`}>
-          <div className="mx-auto" style={{ maxWidth: '1200px' }}>
+        <div className={`col-md-7 col-lg-8 col-xl-9 px-lg-7 py-0 px-0 border-top border-md-top-0 ${isDark}`}>
+          <div className="mx-auto" style={{ maxWidth: '1200px', paddingTop: 60, paddingRight: 20, paddingLeft: 20 }}>
             <Projects />
             <ExpericenceTimeline />
             <Interests />
