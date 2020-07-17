@@ -42,7 +42,7 @@ function ExperienceTimeline(params) {
           className="vertical-timeline-element--work"
           date="October 2018"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          icon={<Icon src="https://mir-s3-cdn-cf.behance.net/projects/404/d0d87b86854657.Y3JvcCwxMDcwLDgzNyw0MjMsMTIx.jpg" />}
+          icon={<Icon src="https://www.media.gov.sa/media/thumb/f6/3c/800_a8d847a832.jpg" />}
         >
           <h3 className="vertical-timeline-element-title">React.js Consultant</h3>
           <h4 className="vertical-timeline-element-subtitle text-orange">General Commission for Audiovisual Media</h4>
