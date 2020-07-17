@@ -46,7 +46,7 @@ export default ({ data }) => {
                       </Link>
                     </span>
                   </p>
-                  <h1 className="f00-light lh-condensed">{post.frontmatter.title}</h1>
+                  <h1 className="f00-light lh-condensed text-orange">{post.frontmatter.title}</h1>
                   <p className={`${style === 'dark' ? 'text-white' : 'text-gray'} mb-5`}>Published {formatePostDate(`${post.fields.postDate}`)}</p>
                   <div dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>

@@ -13,7 +13,7 @@ function PostCard({ post }) {
     <div className={`height-full text-left ${style === 'dark' ? 'box-shadow' : 'border border - gray - light'} bg-white rounded-1 p-3`}>
       < div className="d-flex flex-justify-between flex-items-start mb-1">
         <h1 className="f4 lh-condensed mb-1">
-          <Link to={post.fields.slug}>
+          <Link className="text-dark-blue" to={post.fields.slug}>
             {post.frontmatter.title}
           </Link>
         </h1>

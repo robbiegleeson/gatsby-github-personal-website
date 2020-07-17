@@ -9,6 +9,7 @@ import { Dev, Linkedin, Twitter, Git } from 'styled-icons/fa-brands'
 
 import useSiteMetadata from '../hooks/siteMetaData'
 import useThemeContext from '../hooks/themeContext'
+import Thoughts from './thoughts'
 
 const StyledHr = styled.hr`
   ${props => props.color === 'dark' && 'border-top-color: whitesmoke;'}
@@ -91,7 +92,7 @@ export default ({ metaData }) => {
           borderRadius={'50%'}
           maxWidth={'150px'}
         />
-        <Heading style={{ color: theme.iconColor }} mb={2} lh={'condensed'}>
+        <Heading className={style === 'dark' ? 'text-orange' : ''} style={{ color: theme.iconColor }} mb={2} lh={'condensed'}>
           {name ? name : login}
         </Heading>
         <Box fontSize={4} mb={2}>
@@ -258,7 +259,7 @@ export default ({ metaData }) => {
         )}
         <StyledHr color={style} />
         <Box mb={1}>
-          <Heading mb={2} fontSize={4} style={{ color: style === 'dark' ? 'white' : 'black' }}>
+          <Heading mb={2} fontSize={4} className={style === 'dark' ? 'text-orange' : ''} style={{ color: style === 'dark' ? 'white' : 'black' }}>
             Organizations
           </Heading>
           {organizations &&
@@ -271,6 +272,10 @@ export default ({ metaData }) => {
                 <Avatar size={35} mr={2} src={avatarUrl} />
               </PrimerLink>
             ))}
+        </Box>
+        <StyledHr color={style} />
+        <Box mb={1}>
+          <Thoughts />
         </Box>
       </Box>
     </>
