@@ -27,10 +27,31 @@ body {
   height: 100vh;
 }
 
+.vertical-timeline-element-date {
+  color: #feba00 !important;
+  opacity: 1 !important;
+}
+
 .text-orange {
   color: #feba00 !important;
 }
 
 .text-dark-blue {
   color: #263549 !important;
+}
+
+.custom-icon {
+  background-size: cover !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #FFF !important;
+}
+
+.vertical-timeline {
+  width: 100% !important;
+  max-width: none !important;
 }

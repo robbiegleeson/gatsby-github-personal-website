@@ -28,6 +28,7 @@
     "react-emoji-render": "^1.2.4",
     "react-helmet": "^6.0.0",
     "react-toggle": "^4.1.1",
+    "react-vertical-timeline-component": "^3.0.2",
     "styled-components": "^5.1.1",
     "styled-icons": "^10.2.1"
   },

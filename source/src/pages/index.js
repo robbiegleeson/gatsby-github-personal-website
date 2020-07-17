@@ -6,6 +6,7 @@ import useThemeContext from "../hooks/themeContext"
 import MastHead from '../components/mastHead'
 import Projects from '../components/projects'
 import Interests from '../components/interests'
+import ExpericenceTimeline from '../components/experienceTimeline'
 import Thoughts from '../components/thoughts'
 import SEO from '../components/seo'
 import useSiteMetadata from '../hooks/siteMetaData'
@@ -43,6 +44,7 @@ function IndexPage() {
         <div className={`col-md-7 col-lg-8 col-xl-9 px-4 py-5 px-lg-7 border-top border-md-top-0 ${isDark}`}>
           <div className="mx-auto" style={{ maxWidth: '1200px' }}>
             <Projects />
+            <ExpericenceTimeline />
             <Interests />
             {/* <Thoughts /> */}
           </div>

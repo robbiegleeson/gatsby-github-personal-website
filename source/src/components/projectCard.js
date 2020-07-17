@@ -6,14 +6,15 @@ function ProjectCard({ repository }) {
   const { style } = useThemeContext()
   return (
     <div className={`github-component height-full text-left ${style === 'dark' ? 'box-shadow' : 'border border-gray-light'} bg-white rounded-1 p-3`}>
-      <img src={repository.img} style={{ width: '100%', height: 200 }} />
+      {/* <img src={repository.img} style={{ width: '100%', height: 200 }} /> */}
       <div className="d-flex flex-justify-between flex-items-start mb-1">
         <h1 className="f4 lh-condensed mb-1">
           <a target="_blank" href={repository.url}>
             <span className="text-dark-blue">{repository.name}</span>
           </a>
         </h1>
-      </div>
+      
+        <div className="text-gray mb-2 ws-normal text-orange"><Emoji text={repository.company || ''} /></div></div>
       <div className="text-gray mb-2 ws-normal"><Emoji text={repository.description || ''} /></div>
       {/* <div className="d-flex f6">
         <a href={repository.url} className="d-inline-block link-gray mr-4">
